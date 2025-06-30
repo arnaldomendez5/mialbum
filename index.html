@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Méndez Arnaldo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mi Álbum</h1>
+
+  <div class="album">
+    <img src="playa.jpg" alt="Vacaciones en la playa" />
+    <img src="montaña.jpg" alt="Aventura en la montaña" />
+    <img src="ciudad.jpg" alt="Ciudad de noche" />
+    <!-- Agregá más imágenes acá -->
+  </div>
+
+  <!-- Visor para imagen ampliada -->
+  <div id="visor" class="visor" onclick="cerrarSiClickAfuera(event)">
+    <span class="cerrar" onclick="cerrarVisor()">&times;</span>
+    <img class="visor-contenido" id="imagen-ampliada" src="" alt="" />
+  </div>
+  <section class="info-texto">
+    <h2>Sobre este Álbum</h2>
+    <p>Este álbum muestra una selección de mis mejores fotos de viaje y aventura. Cada imagen tiene un estilo profesional y puede ampliarse haciendo clic sobre ella.</p>
+    <p>Me encanta capturar momentos especiales y compartirlos en esta página sencilla y elegante. ¡Espero que disfrutes las fotos tanto como yo disfruté tomándolas!</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
